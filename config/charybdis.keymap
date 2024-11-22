@@ -64,6 +64,10 @@
         time-to-live-ms = <750>;
     };
 
+#define DEF 0
+#define MOD 1
+#define INT 2
+
     keymap {
         compatible = "zmk,keymap";
 DEF {
@@ -75,7 +79,7 @@ bindings = <
                              &kp BSPC &mo MOD   &kp LGUI       &mkp LCLK     &kp SPACE
                                       &mkp RCLK &mkp LCLK      &kp ENTER
 >;
-
+};
 MOD {
 bindings = <
 &kp ESC        &kp F1       &kp F2           &kp F3        &kp F4          &kp F5            &kp F6     &kp F7      &kp F8      &kp F9      &kp F11     &kp PLUS
@@ -85,7 +89,7 @@ bindings = <
                                              &kp DEL       &trans          &tog INT          &trans     &trans
                                                            &trans          &trans            &trans
 >;
-
+};
 INT {
 bindings = <
 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &none        &none        &bt BT_CLR        &none        &none   &none        &none &none      &none 

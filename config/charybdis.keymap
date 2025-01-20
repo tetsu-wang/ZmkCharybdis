@@ -93,7 +93,7 @@
 &kp F12  &kp F1    &kp F2         &kp F3       &kp F4         &kp F5          &kp F6     &kp F7    &kp F8    &kp F9     &kp F10        &kp F11
 &trans   &trans    &kp LC(PG_UP)  &kp LC(T)    &kp LC(PG_DN)  &kp K_VOL_UP    &kp PG_UP  &kp HOME  &kp UP    &kp END    &kp PSCRN      &kp F12
 &trans   &kp CAPS  &kp LA(LEFT)   &kp LA(TAB)  &kp LA(RIGHT)  &kp K_VOL_DN    &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp BACKSPACE  &trans
-&trans   &trans    &trans         &kp LC(W)    &kp C_PP       &kp K_MUTE      &trans     &trans    &kp LBKT  &kp RBKT   &trans         &trans
+&trans   &trans    &trans         &kp LC(W)    &kp C_PP       &kp K_MUTE      &trans     &trans    &kp LBKT  &kp RBKT   &trans         &studio_unlock
                                   &kp DEL      &trans         &tog INT        &trans     &trans
                                                &trans         &trans          &trans
             >;

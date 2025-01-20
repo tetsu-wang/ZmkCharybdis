@@ -71,7 +71,7 @@
         time-to-live-ms = <750>;
     };
 
-    #define DEF 0
+#define DEF 0
 #define MOD 1
 #define INT 2
 

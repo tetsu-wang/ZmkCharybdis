@@ -3,7 +3,7 @@
 / {
     charybdis_physical_layout: charybdis_physical_layout {
         compatible = "zmk,physical-layout";
-        display-name = "Charybdis 5x6";
+        display-name = "Charybdis 4x6";
 
         kscan = <&kscan0>;
         transform = <&default_transform>;
@@ -23,6 +23,7 @@
             , <&key_physical_attrs 100 100 1200   12       0     0     0>
             , <&key_physical_attrs 100 100 1300   38       0     0     0>
             , <&key_physical_attrs 100 100 1400   38       0     0     0>
+            // 2
             , <&key_physical_attrs 100 100    0  138       0     0     0>
             , <&key_physical_attrs 100 100  100  138       0     0     0>
             , <&key_physical_attrs 100 100  200  112       0     0     0>
@@ -35,24 +36,26 @@
             , <&key_physical_attrs 100 100 1200  112       0     0     0>
             , <&key_physical_attrs 100 100 1300  138       0     0     0>
             , <&key_physical_attrs 100 100 1400  138       0     0     0>
+            // 3
             , <&key_physical_attrs 100 100    0  238       0     0     0>
             , <&key_physical_attrs 100 100  100  238       0     0     0>
             , <&key_physical_attrs 100 100  200  212       0     0     0>
             , <&key_physical_attrs 100 100  300  200       0     0     0>
             , <&key_physical_attrs 100 100  400  212       0     0     0>
             , <&key_physical_attrs 100 100  500  212       0     0     0>
-            , <&key_physical_attrs 100 100    0  338       0     0     0>
-            , <&key_physical_attrs 100 100  100  338       0     0     0>
-            , <&key_physical_attrs 100 100  200  312       0     0     0>
-            , <&key_physical_attrs 100 100  300  300       0     0     0>
-            , <&key_physical_attrs 100 100  400  312       0     0     0>
-            , <&key_physical_attrs 100 100  500  312       0     0     0>
             , <&key_physical_attrs 100 100  900  212       0     0     0>
             , <&key_physical_attrs 100 100 1000  212       0     0     0>
             , <&key_physical_attrs 100 100 1100  200       0     0     0>
             , <&key_physical_attrs 100 100 1200  212       0     0     0>
             , <&key_physical_attrs 100 100 1300  238       0     0     0>
             , <&key_physical_attrs 100 100 1400  238       0     0     0>
+            // 4
+            , <&key_physical_attrs 100 100    0  338       0     0     0>
+            , <&key_physical_attrs 100 100  100  338       0     0     0>
+            , <&key_physical_attrs 100 100  200  312       0     0     0>
+            , <&key_physical_attrs 100 100  300  300       0     0     0>
+            , <&key_physical_attrs 100 100  400  312       0     0     0>
+            , <&key_physical_attrs 100 100  500  312       0     0     0>
             , <&key_physical_attrs 100 100  900  312       0     0     0>
             , <&key_physical_attrs 100 100 1000  312       0     0     0>
             , <&key_physical_attrs 100 100 1100  300       0     0     0>

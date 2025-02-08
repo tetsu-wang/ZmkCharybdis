@@ -50,6 +50,8 @@
         x-input-code = <INPUT_REL_MISC>;
         y-input-code = <INPUT_REL_WHEEL>;
         y-invert;
+        scale-multiplier = <1>;
+        scale-divisor = <4>;
         bindings = <&ib_wheel_scaler 1 14>;
     };
 

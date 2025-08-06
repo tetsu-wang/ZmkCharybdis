@@ -8,7 +8,6 @@
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
-    diode-direction = "row2col";
 
     /* 列引脚 (col-gpios) */
     /* 从左到右: 0.29, 0.02, 1.13, 0.03, 0.28, 1.11 */
@@ -47,6 +46,7 @@
     device = <&trackball>;
   };
 };
+
 
 
 

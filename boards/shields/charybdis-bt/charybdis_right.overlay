@@ -7,24 +7,29 @@
 };
 
 &kscan0 {
-	compatible = "zmk,kscan-gpio-matrix";
-	diode-direction = "row2col";
+    compatible = "zmk,kscan-gpio-matrix";
+    diode-direction = "row2col";
 
-	col-gpios
-		= <&pro_micro 8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // B4
-		, <&pro_micro 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // E6
-		, <&pro_micro 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // D4
-		, <&pro_micro 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // B6
-		, <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // D0
-		, <&pro_micro 19 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> // D1
-		;
-	row-gpios
-		= <&pro_micro 21 GPIO_ACTIVE_HIGH> // D2
-		, <&pro_micro 18 GPIO_ACTIVE_HIGH> // F7
-		, <&pro_micro 15 GPIO_ACTIVE_HIGH> // B1
-		, <&pro_micro 14 GPIO_ACTIVE_HIGH> // B3
-		, <&pro_micro 16 GPIO_ACTIVE_HIGH> // B2
-		;
+    /* 列引脚 (col-gpios) */
+    /* 从左到右: 0.29, 0.02, 1.13, 0.03, 0.28, 1.11 */
+    col-gpios
+        = <&gpio0 29 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // 物理引脚 P0.29
+        , <&gpio0 2  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // 物理引脚 P0.02
+        , <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // 物理引脚 P1.13
+        , <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // 物理引脚 P0.03
+        , <&gpio0 28 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // 物理引脚 P0.28
+        , <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // 物理引脚 P1.11
+        ;
+
+    /* 行引脚 (row-gpios) */
+    /* 0.13, 0.24, 0.09, 0.10, 1.06 */
+    row-gpios
+        = <&gpio0 13 GPIO_ACTIVE_HIGH> // 物理引脚 P0.13
+        , <&gpio0 24 GPIO_ACTIVE_HIGH> // 物理引脚 P0.24
+        , <&gpio0 9  GPIO_ACTIVE_HIGH> // 物理引脚 P0.09
+        , <&gpio0 10 GPIO_ACTIVE_HIGH> // 物理引脚 P0.10
+        , <&gpio1 6  GPIO_ACTIVE_HIGH> // 物理引脚 P1.06
+        ;
 };
 
 &spi0 {
@@ -42,5 +47,6 @@
     device = <&trackball>;
   };
 };
+
 
 
